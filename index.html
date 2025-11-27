@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambo del Inka - Café Especial de Origen</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Tambo del Inka" class="logo-img">
+                    <h1>TAMBO DEL INKA</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-link active" data-seccion="productos">Productos</a></li>
+                        <li><a href="#" class="nav-link" data-seccion="nosotros">Nosotros</a></li>
+                        <li><a href="#" class="nav-link" data-seccion="contacto">Contacto</a></li>
+                        <li>
+                            <button class="carrito-btn" id="btn-carrito">
+                                🛒 Carrito <span id="contador-carrito">0</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Café Especial de Origen Andino</h2>
+            <p>Descubre el auténtico sabor de los Andes peruanos con nuestros cafés especiales de altura, cultivados con técnicas ancestrales y respeto por la tierra.</p>
+            <a href="#" class="btn" id="btn-explorar">Explorar Productos</a>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section class="productos-section" id="seccion-productos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Cafés Especiales</h2>
+            
+            <div class="filtros">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="grano">Café en Grano</button>
+                <button class="filtro-btn" data-categoria="molido">Café Molido</button>
+                <button class="filtro-btn" data-categoria="capsulas">Cápsulas</button>
+                <button class="filtro-btn" data-categoria="accesorios">Accesorios</button>
+            </div>
+
+            <div class="grid-productos" id="lista-productos">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Carrito -->
+    <section class="carrito-section" id="seccion-carrito">
+        <div class="container">
+            <h2 class="section-title">Tu Carrito de Compras</h2>
+            
+            <div class="carrito-contenido">
+                <div class="carrito-items" id="lista-carrito">
+                    <!-- Los items del carrito se cargarán dinámicamente -->
+                </div>
+                
+                <div class="carrito-resumen">
+                    <div class="resumen-linea">
+                        <span>Subtotal:</span>
+                        <span>$<span id="subtotal">0</span></span>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Envío:</span>
+                        <span>$<span id="envio">5</span></span>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Descuento:</span>
+                        <span>-$<span id="descuento">0</span></span>
+                    </div>
+                    <div class="resumen-linea resumen-total">
+                        <span>Total:</span>
+                        <span>$<span id="total">0</span></span>
+                    </div>
+                    
+                    <div class="acciones-carrito">
+                        <button class="btn btn-vaciar" id="vaciar-carrito">Vaciar Carrito</button>
+                        <button class="btn" id="realizar-pedido">Realizar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/logo-blanco.png" alt="Tambo del Inka" class="footer-logo-img">
+                        TAMBO DEL INKA
+                    </div>
+                    <p>Café especial de origen andino, cultivado con técnicas ancestrales y respeto por la tierra.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Nuestros Productos</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Métodos de Cultivo</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacto">
+                    <h3>Contacto</h3>
+                    <p>📍 Cusco, Perú</p>
+                    <p>📞 +51 984 123 456</p>
+                    <p>✉️ info@tambodelinka.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Tambo del Inka - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notificación -->
+    <div id="notificacion" class="notificacion"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
